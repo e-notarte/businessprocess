@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Applicant Portal | Personal Data Sheet</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+
+<style>
+body {
+    font-family: 'DM Sans', sans-serif;
+    background: #f4f6fb;
+    color: #0f172a;
+}
+
+input, select, textarea {
+    transition: all .2s ease;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37,99,235,.15);
+}
+
+section {
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 6px 18px rgba(15, 23, 42, 0.04);
+}
+</style>
+
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header class="bg-slate-900 text-white border-b border-slate-800">
+    <div class="max-w-6xl mx-auto px-6 py-8 flex items-center justify-between">
+
+        <div class="flex items-center gap-4">
+
+            <img
+                src="https://drive.google.com/uc?export=view&id=1H9Uy3vlWT1f0zu3uiNDJMm_m75QrjDUB"
+                alt="Company Logo"
+                class="h-12 w-auto">
+
+            <div>
+                <h1 class="text-2xl font-bold">Applicant Portal</h1>
+                <p class="text-slate-300 text-sm">
+                    Recruitment Management System
+                </p>
+            </div>
+
+        </div>
+
+        <div class="hidden md:block text-xs text-slate-400">
+            Secure HR Application System
+        </div>
+
+    </div>
+</header>
+
+<!-- MAIN -->
+<main class="max-w-6xl mx-auto px-6 py-10">
+
+    <!-- PROGRESS -->
+    <div class="bg-white rounded-xl shadow-sm p-6 mb-8 border">
+        <div class="flex justify-between text-sm text-slate-500 mb-2">
+            <span>Application Progress</span>
+            <span>Step 1 of 1</span>
+        </div>
+
+        <div class="w-full bg-slate-200 rounded-full h-3">
+            <div class="bg-gradient-to-r from-blue-600 via-indigo-600 to-cyan-500 h-3 rounded-full w-full"></div>
+        </div>
+    </div>
+
+    <form class="space-y-8" action="#" method="POST" enctype="multipart/form-data">
+
+        <!-- PERSONAL -->
+        <section class="bg-white rounded-xl p-8">
+            <h2 class="text-xl font-semibold mb-6 border-l-4 border-blue-600 pl-3">
+                Personal Information
+            </h2>
+
+            <div class="grid md:grid-cols-3 gap-4">
+                <input type="text" placeholder="First Name" class="border rounded-lg p-3">
+                <input type="text" placeholder="Middle Name" class="border rounded-lg p-3">
+                <input type="text" placeholder="Last Name" class="border rounded-lg p-3">
+
+                <input type="date" class="border rounded-lg p-3">
+
+                <select class="border rounded-lg p-3">
+                    <option>Gender</option>
+                    <option>Male</option>
+                    <option>Female</option>
+                </select>
+
+                <select class="border rounded-lg p-3">
+                    <option>Civil Status</option>
+                    <option>Single</option>
+                    <option>Married</option>
+                    <option>Widowed</option>
+                    <option>Separated</option>
+                </select>
+
+                <input type="text" placeholder="Nationality" class="border rounded-lg p-3">
+                <input type="text" placeholder="Religion" class="border rounded-lg p-3">
+                <input type="text" placeholder="TIN Number" class="border rounded-lg p-3">
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section class="bg-white rounded-xl p-8">
+            <h2 class="text-xl font-semibold mb-6 border-l-4 border-blue-600 pl-3">
+                Contact Information
+            </h2>
+
+            <div class="grid md:grid-cols-2 gap-4">
+                <input type="email" placeholder="Email Address" class="border rounded-lg p-3">
+                <input type="text" placeholder="Mobile Number" class="border rounded-lg p-3">
+
+                <input type="text" placeholder="Present Address" class="border rounded-lg p-3 md:col-span-2">
+                <input type="text" placeholder="Permanent Address" class="border rounded-lg p-3 md:col-span-2">
+            </div>
+        </section>
+
+        <!-- EDUCATION -->
+        <section class="bg-white rounded-xl p-8">
+            <h2 class="text-xl font-semibold mb-6 border-l-4 border-blue-600 pl-3">
+                Educational Background
+            </h2>
+
+            <div class="grid md:grid-cols-2 gap-4">
+                <input type="text" placeholder="Highest Educational Attainment" class="border rounded-lg p-3">
+                <input type="text" placeholder="Course / Degree" class="border rounded-lg p-3">
+                <input type="text" placeholder="School / University" class="border rounded-lg p-3">
+                <input type="text" placeholder="Year Graduated" class="border rounded-lg p-3">
+            </div>
+        </section>
+
+        <!-- EMPLOYMENT -->
+        <section class="bg-white rounded-xl p-8">
+            <h2 class="text-xl font-semibold mb-6 border-l-4 border-blue-600 pl-3">
+                Employment Information
+            </h2>
+
+            <div class="grid md:grid-cols-2 gap-4">
+                <input type="text" placeholder="Position Applied For" class="border rounded-lg p-3">
+                <input type="text" placeholder="Current Employer" class="border rounded-lg p-3">
+                <input type="number" placeholder="Years of Experience" class="border rounded-lg p-3">
+                <input type="text" placeholder="Expected Salary" class="border rounded-lg p-3">
+            </div>
+        </section>
+
+        <!-- EMERGENCY -->
+        <section class="bg-white rounded-xl p-8">
+            <h2 class="text-xl font-semibold mb-6 border-l-4 border-blue-600 pl-3">
+                Emergency Contact
+            </h2>
+
+            <div class="grid md:grid-cols-3 gap-4">
+                <input type="text" placeholder="Contact Person" class="border rounded-lg p-3">
+                <input type="text" placeholder="Relationship" class="border rounded-lg p-3">
+                <input type="text" placeholder="Contact Number" class="border rounded-lg p-3">
+            </div>
+        </section>
+
+        <!-- DOCUMENTS -->
+        <section class="bg-white rounded-xl p-8">
+            <h2 class="text-xl font-semibold mb-6 border-l-4 border-blue-600 pl-3">
+                Upload Requirements
+            </h2>
+
+            <div class="grid md:grid-cols-2 gap-6">
+                <div>
+                    <label class="block mb-2 font-medium">Resume / CV</label>
+                    <input type="file" class="border rounded-lg p-3 w-full">
+                </div>
+
+                <div>
+                    <label class="block mb-2 font-medium">Valid ID</label>
+                    <input type="file" class="border rounded-lg p-3 w-full">
+                </div>
+
+                <div>
+                    <label class="block mb-2 font-medium">Diploma / TOR</label>
+                    <input type="file" class="border rounded-lg p-3 w-full">
+                </div>
+
+                <div>
+                    <label class="block mb-2 font-medium">Certificates</label>
+                    <input type="file" class="border rounded-lg p-3 w-full">
+                </div>
+            </div>
+        </section>
+
+        <!-- PRIVACY -->
+        <section class="bg-white rounded-xl p-8">
+            <h2 class="text-xl font-semibold mb-6 border-l-4 border-blue-600 pl-3">
+                Data Privacy Consent
+            </h2>
+
+            <label class="flex items-start gap-3">
+                <input type="checkbox" required>
+                <span class="text-sm text-slate-600">
+                    I certify that all information provided is true and correct. I authorize the company
+                    to process my data for recruitment purposes under applicable data privacy laws.
+                </span>
+            </label>
+        </section>
+
+        <!-- SUBMIT -->
+        <div class="text-center">
+            <button
+                type="submit"
+                class="bg-gradient-to-r from-blue-600 via-indigo-600 to-cyan-500
+                hover:scale-105 transition text-white font-semibold text-lg
+                px-10 py-4 rounded-xl shadow-lg shadow-blue-500/30">
+                Submit Application
+            </button>
+        </div>
+
+    </form>
+</main>
+
+<footer class="text-center py-8 text-slate-400 text-sm">
+    Recruitment Management System • Applicant Portal
+</footer>
+
+</body>
+</html>
